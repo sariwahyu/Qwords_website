@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+#product,
+footer h1{
+    color: white;
+}
+
+nav{
+    background-color: #3b2261;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+} 
+
+nav li img{
+    max-height: 32px;
+}
+
+nav a, nav .dropdown {
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+    font-weight: bold;
+}
+
+.dropbtn {
+    cursor: pointer;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #3b2261;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.flex-container-row-slogan {
+    display: flex;
+    flex-basis: 50%;
+    padding: 5%;
+}
+
+.slogan h1{
+    text-align: left !important;
+    font-size: 45px;
+}
+
+.slogan-ilustration{
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+}
+
+.flex-container-row-layanan{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.layanan{
+    margin: 0 20px 40px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 300px;
+    text-align: center;
+}
+
+.layanan img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.feature-list{
+    display: flex;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.feature-list img{
+    width: 20%;
+    border-radius: 5px 0 0 5px;
+}
+
+.isi-feature-list{
+    text-align: left;
+    padding: 15px;
+}
+
+#isi-bantuan {
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #3b2261;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: violet;
+    color: #3b2261;
+    font-weight: bold;
+  }
+
+
+figure img{
+    width: 200px;
+    height: auto;
+}
+
+#social-media a img{
+    height: 16px;
+    width: auto;
+    margin-right: 20px;
+}
+
+#product,
+#testimonial,
+footer{
+    background-color: #3b2261;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media all and (max-width: 400px) {  
+    ul > li {  
+      flex-basis: 100%;  
+    }
+    ul{
+        flex-wrap: wrap;
+    } 
+}
+
+/* @media screen and (max-width: 400px) {
+    * {
+        width: 100%;
+        padding: 0;
+    }
+ } */
